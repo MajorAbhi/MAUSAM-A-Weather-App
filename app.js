@@ -155,18 +155,18 @@ function showWeather(city)
                         );
                     }
 
-                    reqTime.open("GET",`http://api.timezonedb.com/v2.1/get-time-zone?key=KAKM3RZHGDK9&format=json&by=position&lat=${lat}&lng=${lon}`);
+                    reqTime.open("GET",`//api.timezonedb.com/v2.1/get-time-zone?key=KAKM3RZHGDK9&format=json&by=position&lat=${lat}&lng=${lon}`);
                     reqTime.send();
 
                     
                 }
                 if(cel) {unit = 'metric';unitName = "°C"} 
                 else {unit = "imperial";unitName = "F"}
-                requestWeather.open("GET", `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly&appid=73bf224f07dfbffd8b917ebe6c192a8e&units=${unit}`);
+                requestWeather.open("GET", `//api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly&appid=73bf224f07dfbffd8b917ebe6c192a8e&units=${unit}`);
                 requestWeather.send();
             }
         }
-        requestCor.open("GET", "https://api.openweathermap.org/geo/1.0/direct?limit=1&appid=73bf224f07dfbffd8b917ebe6c192a8e&q="+city);
+        requestCor.open("GET", "//api.openweathermap.org/geo/1.0/direct?limit=1&appid=73bf224f07dfbffd8b917ebe6c192a8e&q="+city);
         requestCor.send();
     }
 }
