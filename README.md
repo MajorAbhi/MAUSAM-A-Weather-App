@@ -1,6 +1,6 @@
 # Mausam -  A weather App
 
-Visit - app.mausam.netlify.com
+Visit - appmausam.netlify.com
 
 This simple web application displays current weather data including Current temperature, wind speed, humidity level and Pressure. 
 
