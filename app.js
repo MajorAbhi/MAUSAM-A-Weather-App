@@ -97,7 +97,7 @@ function showWeather(city)
 
                         //Use the Icon variable
                         let iconId = data.current.weather[0].icon;
-                        weatherIcon.src = `http://openweathermap.org/img/wn/${iconId}@2x.png`;
+                        weatherIcon.src = `//openweathermap.org/img/wn/${iconId}@2x.png`;
                         
                         //Weather Data
                         weatherMain.innerHTML = data.current.weather[0].main;
