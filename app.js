@@ -18,7 +18,7 @@ var vis = document.getElementById('visibility');
 var canvas = document.getElementById("myCanvas");
 var error = document.querySelector(".error");
 
-var monthNames = ["Jan", "Feb", "March", "April", "May", "June",
+var monthNames = ["", "Jan", "Feb", "March", "April", "May", "June",
 "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
 
 
