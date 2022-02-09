@@ -53,11 +53,14 @@ function showWeather(city)
             //If No such city exists than show error
             if(cord == '')
             {
-                console.log("No coordinates");
                 document.getElementById('cityError').innerHTML = "No Such City Exists. Please search again";
-                pseudo.classList.toggle('active');
-                unitButton.classList.toggle('active');
-                container.classList.toggle('active');
+                if(pseudo.classList.contains('active')) return;
+                else
+                {
+                            pseudo.classList.toggle('active');
+                            unitButton.classList.toggle('active');
+                            container.classList.toggle('active');
+                }
 
             }
             else
